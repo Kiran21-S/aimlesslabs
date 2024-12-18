@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: cursive;
+        }
+        #target{
+            display: none;
+            height: 40px; 
+            width: 40px; 
+            background: #fff; 
+            color: aliceblue; 
+            border-radius: 100%; 
+            position: absolute;
+            top: 50%; 
+            left: 49%; 
+            transform: translate(-50%,-50%);
+            transform: scale(1);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+        #title1{
+            display: block;
+            position: absolute;
+            color: #fff;
+            font-size: 50px;
+            left: 50%;
+            top: 10%;
+            transform: translate(-50%);
+        }
+        #jump{
+            display: block;
+            position: absolute;
+            color: #767070;
+            font-size: 18px;
+            left: 50%;
+            top: 30%;
+            transform: translate(-50%); 
+        }
+        #start{
+            display: block;
+            position: absolute;
+            color: #767070;
+            font-size: 18px;
+            left: 50%;
+            top: 40%;
+            transform: translate(-50%);
+            height: 100px;
+            width: 100px;
+            border-radius: 100%;
+        }
+        #score{
+            position: absolute; 
+            font-size: 50px; 
+            display: none;
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%);
+            color: #414141;
+        }
+        #score_text{
+            position: absolute; 
+            font-size: 70px; 
+            display: none;
+            top: 0%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            color: #414141;
+            font-weight: bolder;
+        }
+        #playAgain{
+            display: none;
+            position: absolute;
+            color: #767070;
+            font-size: 18px;
+            left: 50%;
+            top: 40%;
+            transform: translate(-50%);
+            height: 100px;
+            width: 100px;
+            border-radius: 100%;
+        }
+        #timer{
+            display: none;
+            position: absolute;
+            color: #767070;
+            font-size: 18px;
+            left: 1%;
+            top: 1%;
+        }
+    </style>
+</head>
+<body style="overflow: hidden; margin: 0;">
+    <div id="timer">60</div>
+    <div id="title1"><p>AIM-LESS LABS</p></div>
+    <p id="score_text">0</p>
+    <h1 id="score">score</h1>
+    <button id="start" onclick="start()">START</button>
+    <div id="jump">Click the circle to Begin</div>
+    <img src="freepik__upload__3956.jpeg" alt="" width="100%">
+    <div id="target" onclick="countScore()"></div>
+    <button id="playAgain" onclick="playAgain()">Play again!</button>
+</body>
+<script src="app.js"></script>
+</html>
